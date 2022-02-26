@@ -11,6 +11,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,15 +38,80 @@
                 </div>
             </div>
         </header>
+
         <!--HERO-->
-        <section></section>
-        <!--TWO COLUMN SECTION-->
-        <section></section>
+        <section>
+            <div class="hero">
+                <div class="container" id="container">
+                    <div class="caption" id="slider-caption">
+                        <div class="caption-heading">
+                            <h1>Lorem Ipsum</h1>
+                        </div>
+                        <div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit.</span></div><a
+                            class="btn" href="#">Sit Amet</a>
+                    </div>
+                    <div class="left-col" id="left-col">
+                        <div id="left-slider"></div>
+                    </div>
+                    <ul class="nav">
+                        <li class="slide-up"> <a href="#">
+
+                        </li>
+                        <li class="slide-down"> <a id="down_button" href="#">></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--TWO COLUMNS SECTION-->
+        <section>
+            <div class="two-columns-layout">
+                <div class="col-left"></div>
+                <img src="https://images.unsplash.com/photo-1485546784815-e380f3297414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNyZWF0aXZlJTIwbWluZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="col-right">
+                    <h3>How to become freedom</h3>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit provident officiis praesentium
+                    voluptates, alias esse deleniti saepe nulla deserunt enim tempora vero similique, voluptatibus nihil
+                    voluptate tenetur porro maxime repellat.
+                </div>
+
+            </div>
+        </section>
+
         <!--CONTACT FORM-->
-        <section></section>
+        <section>
+            <div class="contact-form">
+                <form action=">#">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Your Name" id="name" />
+                    </div>
+                    <div>
+                        <label for="name">Email</label>
+                        <input type="text" name="email" placeholder="Your Email" id="email" />
+                    </div>
+                    <div>
+                        <label for="name">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+
         <!--FOOTER-->
-        <footer></footer>
+        <footer>
+            <div class="main-footer">
+
+            </div>
+            <div class="footer-copyright">
+                <p>Design and Developed by Yanis Ahmed</p>
+            </div>
+        </footer>
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script src="js/main.js" async defer></script>
 </body>
 
