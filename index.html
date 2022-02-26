@@ -11,7 +11,6 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,18 +21,22 @@
     <div class="app">
         <!--HEADER-->
         <header>
-            <div class="full-header">
-                <div class="header-logo">
-                    <img src="images/freedom-logo.png" alt="freedom-logo" />
-                </div>
-                <div class="header-menu">
-                    <div class="primary-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Gallery</a></li>
-                        </ul>
+            <div class="container-body">
+                <div class="full-header">
+                    <div class="header-logo">
+                        <a href="/"> <img src="images/freedom-logo.png" alt="freedom-logo" /></a>
+                    </div>
+                    <div class="header-menu">
+                        <div class="primary-menu">
+                            <ul class="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Gallery</a></li>
+
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,72 +68,91 @@
 
         <!--TWO COLUMNS SECTION-->
         <section>
-            <div class="two-columns-layout">
-                <div class="col-left"></div>
-                <img src="https://images.unsplash.com/photo-1485546784815-e380f3297414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNyZWF0aXZlJTIwbWluZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="">
-                <div class="col-right">
-                    <h3>How to become freedom</h3>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit provident officiis praesentium
-                    voluptates, alias esse deleniti saepe nulla deserunt enim tempora vero similique, voluptatibus nihil
-                    voluptate tenetur porro maxime repellat.
-                </div>
+            <div class="container-body">
+                <div class="two-columns-layout">
+                    <div class="col-left-image">
+                        <img src="https://images.unsplash.com/photo-1485546784815-e380f3297414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNyZWF0aXZlJTIwbWluZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
 
+                    <div class="col-right">
+                        <h3 class="section-title">How to become freedom</h3>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit provident officiis praesentium
+                        voluptates, alias esse deleniti saepe nulla deserunt enim tempora vero similique, voluptatibus
+                        nihil
+                        voluptate tenetur porro maxime repellat.
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <!--CONTACT FORM-->
-        <section>
-            <div class="contact-form">
-                <form action=">#">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Your Name" id="name" />
-                    </div>
-                    <div>
-                        <label for="name">Email</label>
-                        <input type="text" name="email" placeholder="Your Email" id="email" />
-                    </div>
-                    <div>
-                        <label for="name">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
+        <section id="contact-area">
+            <div class="container-body">
+                <div class="contact-form">
+                    <form action="#">
+                        <h3 class="section-title">Contact</h3>
+                        <div>
+
+                            <input type="text" name="name" id="name" placeholder="Your Name" id="name" />
+                            <span id="name-error"></span>
+                        </div>
+                        <div>
+
+                            <input type="email" name="email" id="email" placeholder="Your Email" id="email" />
+                            <span id="email-error"></span>
+                        </div>
+                        <div>
+                            <label for="name">Message</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+                        <input type="submit" id="btnSubmit" value="Send">
+                        <div>
+                            <span id="message-success"></span>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </section>
 
         <!--FOOTER-->
         <footer>
-            <div class="main-footer">
-                <div class="main-footer-left">
-                    <img src="images/freedom-logo.png" alt="footer-logo" />
-                </div>
-                <div class="main-footer-middle">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="main-footer-right">
-                    <div class="social-icons">
-                        <p>
-                            <span class="social-icon-btn">Facebook</span>
-                            <span class="social-icon-btn">Twiter</span>
-                            <span class="social-icon-btn">Pinterest</span>
-                        </p>
+            <div class="container-body">
+                <div class="main-footer">
+                    <div class="main-footer-left">
+                        <img src="images/freedom-logo.png" alt="footer-logo" />
+                    </div>
+                    <div class="main-footer-middle">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-footer-right">
+                        <div class="social-icons">
+                            <p>
+                                <span class="social-icon-btn">Facebook</span>
+                                <span class="social-icon-btn">Twiter</span>
+                                <span class="social-icon-btn">Pinterest</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-copyright">
-                <p>Design and Developed by Yanis Ahmed</p>
+                <div class="footer-copyright">
+                    <p>Design and Developed by Yanis Ahmed</p>
+                </div>
             </div>
         </footer>
     </div>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <script src="js/formValidation.js" async defer></script>
     <script src="js/main.js" async defer></script>
+
+
 </body>
 
 </html>

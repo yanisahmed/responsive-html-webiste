@@ -62,11 +62,44 @@
     margin: 0;
     box-sizing: border-box;
   }
+.container-full{
+    width:100%
+}
+.container-body{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
 
-  /* HEADER */
+  /*============================= HEADER ========================== */
+
+  .full-header{
+      display: flex;
+      justify-content: space-between;
+  }
+  .header-logo img{
+      width: 100px;
+      height: 60px;
+  }
+  .header-menu{
+      display: flex;
+      align-items: center;
+  }
+  .header-menu .menu{
+      display: flex;
+      column-gap: 10px;
+  }
+  .header-menu .menu{
+      margin:0;
+      padding: 0;
+      list-style-type: none;
+  }
+  .header-menu .menu li a{
+    text-decoration: none;
+}
 
 
-
+  /*============================= HERO ============================ */
 img {
   max-width: 100%;
 }
@@ -243,3 +276,130 @@ img {
   right: 0;
   transform: translateX(100%);
 }
+/* ====================== Two Column Layout ======== */
+.two-columns-layout{
+    display: flex;
+    justify-content: space-between;
+}
+.col-left-image{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.col-right{
+  width: 45%;
+}
+.col-right .section-title{
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/*======================= CONTACT FORM ============== */
+#contact-area{
+  background-image: url('https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  rotate: 0;
+}
+.contact-form input[type="text"],input[type="email"]{
+  border: 1px solid #34495e;
+background: transparent;
+  border-radius: 8px;
+  padding: 7px 50px;
+  color: #000;
+  margin: 5px 0 5px 0;
+}
+.contact-form textarea{
+  border: 1px solid #34495e;
+  background: transparent;
+  border-radius: 8px;
+  color: #000;
+}
+.contact-form input[type="submit"]{
+ margin-top: 10px;
+ margin-top: 10px;
+padding: 5px 20px;
+background: #34495e;
+border: 0;
+color: #fff;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#name-error, #email-error, #message-error{
+  color: #DE3163
+}
+#message-success{
+  color: #008080
+}
+
+/*======================= FOOTER ==================== */
+footer{
+    background-color:  #34495e ;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.main-footer-left img{
+    width: 200px;
+    height: 100px;
+}
+.main-footer-middle ul{
+   margin: 0;
+   padding: 0;
+} 
+.main-footer-middle ul li{
+    list-style-type: none;
+} 
+.main-footer-middle ul li a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+} 
+.footer-copyright {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .caption .caption-heading h1 {
+    font-size: 2rem;
+  }
+    .two-columns-layout{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+   
+  .col-left-image{
+      width: 90%;
+      margin: 0 auto;
+  }
+  
+  .col-right{
+    width: 90%;
+  }
+    .main-footer{
+        flex-direction: column;
+        row-gap: 30px;
+        align-content: center;
+        align-items: center;
+    }
+ }
